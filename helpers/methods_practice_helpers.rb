@@ -1,9 +1,7 @@
 module MethodsPracticeHelpers
 
   def image_tag(source, alternate_text)
-    # Generate an image tag with the given source and the classes
-    # "img-responsive" and "img-thumbnail". The image should also have an alt
-    # attribute with the contents of alternate_text.
+    return "<img class='img-responsive img-thumbnail' src='#{source}' alt='#{alternate_text}' />"
   end
 
   def bootstrap_alert(message, type='info')
